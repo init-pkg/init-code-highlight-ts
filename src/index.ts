@@ -240,8 +240,8 @@ export default class InitCodeHighlight {
   }
 
   protected updateEditorHeight() {
-    let maxLineNumber = this.opts.maxLines || Infinity;
-    let minLineNumber = this.opts.minLines || 0;
+    let maxLineNumber = this.opts.maxLines || 100;
+    let minLineNumber = this.opts.minLines || 3;
     let limitedLineNumber = this.lineNumber;
     if (limitedLineNumber > maxLineNumber) {
       limitedLineNumber = maxLineNumber;
@@ -249,7 +249,7 @@ export default class InitCodeHighlight {
       limitedLineNumber = minLineNumber;
     }
 
-    this.elWrapper.style.height = `${limitedLineNumber * 20 + 20}px`;
+    this.elWrapper.style.height = `${limitedLineNumber * 20 + 24}px`;
   }
 
   protected listenTextarea() {
