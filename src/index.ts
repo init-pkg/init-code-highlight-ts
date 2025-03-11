@@ -495,10 +495,14 @@ export default class InitCodeHighlight {
   }
 
   public updateLanguage(newLanguage: string) {
-    const oldLanguage = this.opts.language;
-    this.elCode.classList.remove(`language-${oldLanguage}`);
-    this.elCode.classList.add(`language-${newLanguage}`);
     this.opts.language = newLanguage;
+    this.elCode.classList.forEach((className) => {
+      if (className.startsWith("language-")) {
+        this.elCode.classList.remove(className);
+      }
+    });
+
+    this.elCode.classList.add(`language-${newLanguage}`);
     this.highlight();
   }
 
