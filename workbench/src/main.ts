@@ -71,4 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Создаём редактор по умолчанию
   demoCreate();
   demoInit();
+
+  console.log(ch?.getPrism());
 });

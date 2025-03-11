@@ -1,6 +1,3 @@
-# JSON Stream Parser (TypeScript Edition)
-
-
 <p align="center">
   <p align="center">
     <a href="https://init.kz/en">

@@ -107,7 +107,10 @@ export default class InitCodeHighlight {
 
   protected createPre() {
     this.elPre = this.createElement("pre", this.elWrapper);
-    this.elPre.classList.add("init-code-highlight__pre", "init-code-highlight__flatten");
+    this.elPre.classList.add(
+      "init-code-highlight__pre",
+      "init-code-highlight__flatten"
+    );
   }
 
   protected createCode() {
@@ -229,7 +232,8 @@ export default class InitCodeHighlight {
     let numberList = "";
     for (let i = 1; i <= this.lineNumber; i++) {
       numberList =
-        numberList + `<span class="init-code-highlight__lines__line">${i}</span>`;
+        numberList +
+        `<span class="init-code-highlight__lines__line">${i}</span>`;
     }
     this.elLineNumbers!.innerHTML = numberList;
   }
@@ -498,9 +502,9 @@ export default class InitCodeHighlight {
     this.highlight();
   }
 
-  // addLanguage (name, options) {
-  //   Prism.languages[name] = options
-  // }
+  public getPrism() {
+    return Prism;
+  }
 
   protected populateDefault() {
     this.updateCode(this.code);
