@@ -1,6 +1,6 @@
 {
   "name": "@init-kz/init-code-highlight-ts",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A micro code-editor for awesome web pages",
   "homepage": "https://init.kz/en",
   "repository": {
@@ -46,13 +46,13 @@
     }
   ],
   "peerDependencies": {
-    "prismjs": "^1.30.0"
+    "prismjs": "^1.29.0"
   },
   "devDependencies": {
     "@types/node": "^22.13.5",
     "@types/prismjs": "^1.26.5",
     "http-server": "^14.1.1",
-    "prismjs": "^1.30.0",
+    "prismjs": "^1.29.0",
     "tsup": "^8.4.0",
     "typescript": "^5.7.3",
     "vitest": "^3.0.7"
