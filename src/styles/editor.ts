@@ -126,6 +126,7 @@ export const editorCss = `
     width: 22px;
     height: 22px;
     border-radius: 4px;
+    z-index: 9999;
   }
 
   .init-code-highlight__copyMessage{
@@ -145,6 +146,6 @@ export const editorCss = `
     font-size: 12px;
     text-align: center;
     font-family: 'Cousine', monospace;
+    z-index: 9999;
   }
-
 `;
