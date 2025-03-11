@@ -288,6 +288,7 @@ export default class InitCodeHighlight {
       (this.events._scroll = (e) => {
         const target = e.target as HTMLElement;
         this.elPre.style.transform = `translate3d(-${target.scrollLeft}px, -${target.scrollTop}px, 0)`;
+        this.elLineNumbers.style.transform = `translate3d(0px, -${target.scrollTop}px, 0)`;
       })
     );
   }
