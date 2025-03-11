@@ -109,7 +109,8 @@ export default class InitCodeHighlight {
     this.elPre = this.createElement("pre", this.elWrapper);
     this.elPre.classList.add(
       "init-code-highlight__pre",
-      "init-code-highlight__flatten"
+      "init-code-highlight__flatten",
+      `language-${this.opts.language || "plain"}`
     );
   }
 
